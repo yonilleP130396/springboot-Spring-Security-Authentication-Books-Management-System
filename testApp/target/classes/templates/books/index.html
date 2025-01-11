@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Platform</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+        }
+
+        main {
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #004d99;
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+                width: 150px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Welcome to Our Platform!</h1>
+    </header>
+
+    <main>
+        <p>We are excited to have you on board. Please choose a panel to proceed:</p>
+
+        <div class="buttons">
+            <a href="/admin" class="btn">Admin Panel</a>
+            <a href="/books" class="btn">Books Panel</a>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
